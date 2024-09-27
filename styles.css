@@ -1,35 +1,79 @@
-/* Outdated CSS */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body and font setup */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-h1 {
-    margin: 0;
+/* Header styling */
+.header {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 20px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.header h1 {
+    margin-bottom: 10px;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+/* Navbar styling */
+.navbar {
+    background-color: #333333;
+    text-align: center;
+    padding: 10px 0;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-img {
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Content using grid layout */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card styling for content sections */
+.card, .full-width-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img, .full-width-card img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Full-width card for Features and Benefits */
+.full-width-card {
+    grid-column: span 2;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #cccccc;
+    text-align: center;
+    padding: 10px;
 }
